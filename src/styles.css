@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import  '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-toastr/toastr.css';
+
+
+/* css for navbar */
+nav.bg-custom {
+    /*background-color: #ffc107d9!important;*/
+    background-color: #292826!important;
+}
+nav .navbar-brand {
+	/*border-right: solid 2px #9c27b0;*/
+	border-right: solid 2px #f9d342;
+    padding-right: 10px;
+}
+nav .menuText {
+	color: #f9d342;
+	font-weight: bold;
+}
+nav a.navbar-brand {
+    background: #f9d342;
+    padding: 8px;
+    border: solid 2px #292825;
+}
+
+nav li.active span.menuText {
+	border-bottom: solid;
+}
+nav.header {
+	position: fixed;
+    width: 100%;
+    height: 50px;
+    padding-left: 0px;
+    z-index: 999;
+}
+/* ends here ~ css for navbar */
+
+
+.paddingTopHeader {
+	padding-top: 50px;
+}
+.vh100 {
+	height: 100vh;
+}
+.login-bg, .common-bg {
+	background-color: #f9d342;
+}
+.consolos-font {
+	font-family: Consolas, monaco, monospace;
+}
+.cursive-font {
+	font-family: cursive;	
+}
+.marginTop10px {
+	margin-top: 10px;
+}
+.row {
+	margin-left: unset !important;
+	margin-right: unset !important;
+}
+.modal-header, .modal-footer {
+    padding: 5px 15px 5px 15px;
+    background-color: #f9d342;
+}
+.modal-dialog {
+    border: solid 2px;
+    border-radius: 10px;
+}

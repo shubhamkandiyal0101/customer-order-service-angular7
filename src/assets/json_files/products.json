@@ -1,0 +1,122 @@
+[
+	{
+		"prod_id":1,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":5,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":6000
+	},
+	{
+		"prod_id":2,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"Lenovo Ideapad 330-15IKB (81DE01K0IN)",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":3,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":5000
+	},
+	{
+		"prod_id":3,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"Dell Inspiron 15R 5559 (I5559-7080SLV)",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":0,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":4000
+	},
+	{
+		"prod_id":4,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"Asus Vivobook X540MA-GQ024T",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":5,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":5200
+	},
+	{
+		"prod_id":5,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP 15 Core i5 8th gen 15.6-inch",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":0,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":2600
+	},
+	{
+		"prod_id":6,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 11",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":3,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":3200
+	},
+	{
+		"prod_id":7,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 13",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":3,
+		"listed_by":"sharmavendor@gmail.com",
+		"prod_prc":3300
+	},
+	{
+		"prod_id":8,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 23",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":3,
+		"listed_by":"trumpvendor@gmail.com",
+		"prod_prc":3400
+	},
+	{
+		"prod_id":9,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 33",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":1,
+		"listed_by":"trumpvendor@gmail.com",
+		"prod_prc":3600
+	},
+	{
+		"prod_id":10,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 12",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":6,
+		"listed_by":"trumpvendor@gmail.com",
+		"prod_prc":6600
+	},
+	{
+		"prod_id":11,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 32",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":12,
+		"listed_by":"trumpvendor@gmail.com",
+		"prod_prc":8600
+	},
+	{
+		"prod_id":12,
+		"prod_img":"assets/img/laptopProd.png",
+		"name":"HP ProBook 440 G6 Notebook PC 54",
+		"desc":"Intel® Core™ i5-8265U with Intel® UHD Graphics 620 (1.6 GHz base frequency, up to 3.9 GHz with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)",
+		"features": [{"displayValue":"8GB RAM"},{"displayValue":"256GB SSD"},{"displayValue":"2TB HDD"},{"displayValue":"CD/DVD Driver"},{"displayValue":"Gaming Laptop"},{"displayValue":"Others Features 01"},{"displayValue":"Others Features 02"}],
+		"Qty":3,
+		"listed_by":"trumpvendor@gmail.com",
+		"prod_prc":5100
+	}
+]

@@ -1,0 +1,38 @@
+.login-form {
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 4px white;
+    border-radius: 6px;
+    margin-top: 10vh;
+    color: #f9d342;
+    background: #292826;
+    font-weight: bold;
+    text-align: center;
+	width: 300px;
+}		
+.form-content {
+    padding: 15px 15px 30px 15px;
+    font-family: Consolas, monaco, monospace;
+}
+.login-form .form-title {
+    font-family: cursive;
+    color: #fff;
+    margin-top: 15px;
+}
+.formErrorMessages {
+	color: #fff;
+}
+.addProduct {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 9;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+}

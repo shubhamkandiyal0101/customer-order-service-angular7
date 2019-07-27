@@ -1,0 +1,45 @@
+<div class="vh100 login-bg">
+   <div class="paddingTopHeader login-bg">
+      <!-- login form -->
+      <form class="login-form" #loginForm="ngForm">
+         <div class="form-group">
+            <h3 class="form-title">Login</h3>
+         </div>
+         <div class="form-content">
+            <div class="form-group">
+               <label for="email">Email Address</label>
+               <input type="email" class="form-control" name="userEmail" [(ngModel)]="userEmail" #userEmailRef="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$" maxlength="50" required>
+               <div *ngIf="userEmailRef.invalid && userEmailRef.dirty" class="formErrorMessages">
+               		<span *ngIf="userEmailRef.errors.required">Email Field is Required</span>
+               		<span *ngIf="userEmailRef.errors.maxlength">Please do not exceed 50 characters limit</span>
+               		<span *ngIf="userEmailRef.errors.pattern">Please Provide valid Email</span>
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="pwd">Password</label>
+               <input type="password" class="form-control" name="userPass" [(ngModel)]="userPass" #userPassRef="ngModel" maxlength="30" required>
+               <div *ngIf="userPassRef.invalid && userPassRef.dirty" class="formErrorMessages">
+               		<span *ngIf="userPassRef.errors.required">Password Field is Required</span>
+               		<span *ngIf="userPassRef.errors.maxlength">Please do not exceed 30 characters limit</span>
+               </div>
+            </div>
+           <div class="form-group">
+               <label for="userType">User Type</label>
+               <select class="form-control" #userType>
+               		<option value="vendor">Vendor</option>
+               		<option value="customer">Customer</option>
+               </select> 
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="loginUser(userType.value)" [disabled]="loginForm.invalid">Submit Form</button>
+         </div>
+      </form>
+      <!-- ends here ~ login form -->
+
+      <!-- about author -->
+      <a class="addProduct" style="color: white;" href="https://github.com/shubhamkandiyal0101" target="_blank">
+         <b>About Author</b>
+      </a>
+      <!-- ends here ~ about author -->
+
+   </div>
+</div>

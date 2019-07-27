@@ -1,0 +1,190 @@
+<div class="vh100 common-bg cursive">
+   <div class="paddingTopHeader common-bg">
+	<!-- show products according to vendors -->
+	<ng-container>
+		<h4 class="marginTop10px" style="text-align: center;padding: 10px;background:#fff;">
+			<b>
+				<span>Listed Products</span>
+			</b>
+		</h4>
+
+		<div class="productList row">
+			<div *ngFor="let product of allProducts; let idx = index" class="col-3" style="margin-top: 15px;">
+				<div class="card">
+				  <img class="card-img-top card-img-bg" [src]="product.prod_img" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title text-center">{{product.name}}</h5>
+				    <h6 class="text-center">
+				    	<b>{{product.prod_prc | currency}}</b> 
+				    </h6>
+				    <hr/>
+				    <p class="card-text">{{product.desc}}</p>
+				    <button class="btn btn-primary" *ngIf="completeUserInfo.userType == 'vendor'" (click)="editProduct(idx, editProdModelTmpt)">Edit Product</button>
+				    
+				    <button class="btn" *ngIf="completeUserInfo.userType == 'customer'" (click)="viewProdDetails(idx,viewProdDetailsModelTmpt)" style="background: #212529; border:#212529;color:#fff; float: right;" >View Details</button>
+				    <button class="btn btn-primary" *ngIf="completeUserInfo.userType == 'customer' && product.Qty > 0" (click)="buyProduct(idx)">Buy</button>
+				    <button class="btn btn-primary" *ngIf="(product.Qty <= 0 || product.Qty == 'undefined') && completeUserInfo.userType == 'customer'" [disabled]="true">Out of Stock</button>
+
+				  </div>
+				</div>
+			</div>
+		</div>
+
+	</ng-container>
+	<!-- ends here ~ show products according to vendors  -->
+
+	<!-- add product button -->
+	<div class="addProduct" (click)="addProductModal(editProdModelTmpt)" *ngIf="completeUserInfo.userType == 'vendor'">
+		<b>Add Product</b>
+	</div>
+	<a class="addProduct" *ngIf="completeUserInfo.userType == 'customer'" style="color: white;" href="https://github.com/shubhamkandiyal0101" target="_blank">
+		<b>About Author</b>
+	</a>
+	<!-- ends here ~ add product button -->
+
+
+	<!-- product edit modal -->
+
+	<ng-template #editProdModelTmpt>
+	  <div class="modal-header">
+	    <h4 class="modal-title pull-left"><span *ngIf="editProdModelMode">Edit</span><span *ngIf="!editProdModelMode">Add</span> Product</h4>
+	    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+	      <span aria-hidden="true">×</span>
+	    </button>
+	  </div>
+	  <div class="modal-body">
+	  	
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			Name
+	  		</div>
+	  		<div class="col-9">
+	  			<input type="text" [value]="currentSelectedProduct.name" class="form-control" #selProdName>
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			Description
+	  		</div>
+	  		<div class="col-9">
+	  			<textarea [value]="currentSelectedProduct.desc" class="form-control" rows="5" style="resize: none;" #selProdDesc></textarea>
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			Quantity
+	  		</div>
+	  		<div class="col-9">
+	  			<input type="number" [value]="currentSelectedProduct.Qty" class="form-control" #selProdQty>
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			Price
+	  		</div>
+	  		<div class="col-9">
+	  			<input type="number" [value]="currentSelectedProduct.prod_prc" class="form-control" #selProdPrc>
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			Features
+	  		</div>
+	  		<div class="col-9">
+	  			<ngx-tags-input class="form-control input-lg" [(ngModel)]="curSelProdFeature" style="height:80px;"></ngx-tags-input>
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="modal-footer" *ngIf="editProdModelMode">
+        <button type="button" class="btn btn-primary" (click)="delProd()"><b>DELETE</b></button>
+        <button type="button" class="btn" (click)="updateProd(selProdName.value,selProdDesc.value,selProdQty.value,selProdPrc.value)" style="background: #212529; border:#212529;color:#fff;"><b>UPDATE</b></button>
+      </div>
+
+      <div class="modal-footer" *ngIf="!editProdModelMode">
+        <button type="button" class="btn" style="background: #212529; border:#212529;color:#fff;" (click)="addProduct(selProdName.value,selProdDesc.value,selProdQty.value,selProdPrc.value)"><b>Create</b></button>
+      </div>
+	</ng-template>
+	<!-- ends here ~ product edit modal -->
+
+
+	<!-- View Product Details Modal -->
+
+	<ng-template #viewProdDetailsModelTmpt>
+	  <div class="modal-header">
+	    <h4 class="modal-title pull-left">Product Details</h4>
+	    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+	      <span aria-hidden="true">×</span>
+	    </button>
+	  </div>
+	  <div class="modal-body">
+	  	
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Name</b>
+	  		</div>
+	  		<div class="col-9">
+	  			{{currentSelectedProduct.name}}
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Description</b>
+	  		</div>
+	  		<div class="col-9">
+	  			{{currentSelectedProduct.desc}}
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Quantity</b>
+	  		</div>
+	  		<div class="col-9">
+	  			{{currentSelectedProduct.Qty}}
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Price</b>
+	  		</div>
+	  		<div class="col-9">
+	  			{{currentSelectedProduct.prod_prc | currency}}
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Features</b>
+	  		</div>
+	  		<div class="col-9">
+	  			<ul>
+	  				<li *ngFor="let prodFeature of currentSelectedProduct.features">
+	  					{{prodFeature.displayValue}}
+	  				</li>
+	  			</ul>
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Seller Info</b>
+	  		</div>
+	  		<div class="col-9">
+				{{currentSelectedProduct.listed_by}}
+	  		</div>
+	  	</div>
+	  	<div class="row form-group">
+	  		<div class="col-3">
+	  			<b>Stocks</b>
+	  		</div>
+	  		<div class="col-9">
+				{{currentSelectedProduct.Qty}}
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="modal-footer">
+	  	<b><a href="https://github.com/shubhamkandiyal0101" target="_blank">C.O.S. Created by: Shubham Kandiyal | Github Profile</a></b>
+      </div>
+	</ng-template>
+	<!-- ends here ~ View Product Details Modal -->
+
+
+	</div>
+</div>
