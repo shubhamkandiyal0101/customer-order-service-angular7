@@ -20,15 +20,15 @@ __Note:__ I create JSON Files (assets/json_files) in assets folder where you can
 	A. Vendor Login
 	B. Customer Login 
 2. After Login:
-	A. After Vendor Login:
-		i. Fetch Product According to Current Login Vendor 
-		ii. Add New Product
-		iii. Delete Product
-		iv. Modify Product
-	B. After Customer Login:
-		i. Fetch All Products
-		ii. Buy Products
-		iii. View Product Details
+	1. After Vendor Login:
+		1. Fetch Product According to Current Login Vendor 
+		2. Add New Product
+		3. Delete Product
+		4. Modify Product
+	2. After Customer Login:
+		1. Fetch All Products
+		2. Buy Products
+		3. View Product Details
 3. Use Local Storage to Save State of Products (Not need to fetch JSON File Again and Again)
 
 ##### **Technologies Used**
