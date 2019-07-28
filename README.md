@@ -50,7 +50,7 @@ __Note:__ I create JSON Files (assets/json_files) in assets folder where you can
 
 #### **Project Screenshots**
 
-__NOTE__: If Screenshots is Not Possible Below, Then You can Navigate to __projectScreenshots__ Folder 
+__NOTE__: If Screenshots is Not Showing Below, Then You can Navigate to __projectScreenshots__ Folder 
 
 #### **About Developer**
 
