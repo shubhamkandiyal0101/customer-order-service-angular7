@@ -12,6 +12,15 @@
 3. Install all Requirements from package.json file (Command: __npm install__)
 4. Finally, Start Project with this Command: __ng serve__ 
 
+##### **Login Crendentials**
+__Vendor Credentials__
+1. *E-Mail:* sharmavendor@gmail.com *Password:* rohitsharmaji
+2. *E-Mail:* trumpvendor@gmail.com *Password:* wahtrumpjiwah
+__Customer Credentials__
+1. *E-Mail:* customerstevejobs@gmail.com *Password:* technologyhaiapni
+2. *E-Mail:* customerbillgates@gmail.com *Password:* windowshaiapni
+
+
 ##### **Project Functionality**
 
 __Note:__ I create JSON Files (assets/json_files) in assets folder where you can modify (Add, Delete & Change) data of Products, Customer and Vendors
