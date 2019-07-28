@@ -16,6 +16,7 @@
 __Vendor Credentials__
 1. *E-Mail:* sharmavendor@gmail.com *Password:* rohitsharmaji
 2. *E-Mail:* trumpvendor@gmail.com *Password:* wahtrumpjiwah
+
 __Customer Credentials__
 1. *E-Mail:* customerstevejobs@gmail.com *Password:* technologyhaiapni
 2. *E-Mail:* customerbillgates@gmail.com *Password:* windowshaiapni
