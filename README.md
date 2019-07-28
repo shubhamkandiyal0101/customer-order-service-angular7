@@ -26,9 +26,10 @@ __Customer Credentials__
 
 __Note:__ I create JSON Files (assets/json_files) in assets folder where you can modify (Add, Delete & Change) data of Products, Customer and Vendors
 
-1. Login User
-	A. Vendor Login
-	B. Customer Login 
+1. Login User Functionality:
+	1. User Type:
+		1. Vendor
+		2. Customer 
 2. After Login:
 	1. After Vendor Login:
 		1. Fetch Product According to Current Login Vendor 
